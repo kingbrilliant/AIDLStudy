@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.study.aidllibrary">
+
+    <application>
+        <service
+            android:name=".SellService"
+            android:exported="true"
+            android:process=":add">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.example.study.aidllibrary" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
